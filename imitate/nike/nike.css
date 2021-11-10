@@ -1,0 +1,431 @@
+#header_logo, #desk_user {
+    list-style-type: none;
+}
+
+#desk_user > li:not(:last-child):after {
+    content: "|";
+}
+
+#desk_user > li > a:hover {
+    color: #757575;
+}
+
+#desk_user > li > a {
+    color: #444;
+    font-size: 0.8rem; 
+    text-decoration: none;
+}
+
+.navbar-brand > img {
+    width: 60px;
+}
+
+#search > i {
+    left: 15px;
+    top: 7px;
+}
+
+#search {
+    width: 180px;
+    right: 100px;
+    visibility: hidden;
+}
+
+#collapsibleNavId {
+ padding-left: 10%;
+}
+
+.header-logo {
+    left: 50px;
+    top: 20px;
+}
+
+#info-more {
+    color: black;
+    font-size: 0.7rem;
+}
+
+#info {
+    box-shadow: none;
+    border-top: none;
+}
+
+.card-body {
+    font-weight: normal;
+    font-size: 1.1rem;
+    padding: 0px;
+}
+
+.btn:hover, .gender-more:first-child:hover > .gender-more:first-child, .gender-more:last-child:hover > .gender-more:last-child {
+    opacity: 0.8;
+}
+
+
+.card-overlay-content {
+    word-spacing: -2.8px;
+}
+
+.card-img-overlay > .position-absolute {
+    left: 40px;
+    top: 80%;
+}
+
+.btn-buy {
+    font-size: 0.9rem;
+    padding: 9px 25px;
+    width: 140px;
+    margin: 0.5%
+}
+
+#buy-gender:hover > span:first-child  {
+    display: none;
+}
+
+#buy-gender:hover > .gender-more, .gender-more:hover{
+    display: inline !important;
+}
+
+#buy-gender:hover + .gender-more, .gender-more:hover {
+    display: block !important;
+}
+
+.male{
+    bottom: -42px;
+    border: 1px solid #999;
+}
+
+.female{
+    bottom: -84px;
+    border: 1px solid #999;
+
+}
+
+.swiper-scrollbar {
+    bottom: -50px;
+    width: 600px;
+    visibility: hidden;
+}
+
+.swiper-slide {
+    margin-right: 13px;
+    min-width: 350px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 350px;
+}
+
+.button-next, .button-prev {
+    top: 50%;
+    z-index: 100;
+    position: absolute;
+}
+
+.button-next {
+    right: 50px;
+}
+
+.button-prev {
+    left: 50px;
+}
+
+.bi-chevron-right, .bi-chevron-left {
+    z-index: 300;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+}
+
+.button-prev, .button-next {
+    visibility: hidden;
+}
+
+.mySwiper:hover .button-prev, .mySwiper:hover .button-next {
+    visibility: hidden;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover > img {
+    opacity: 0.6;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    margin-top: 15px;
+}
+
+footer {
+    font-size: 0.8rem;
+}
+
+footer a, footer a:hover{
+    color: white;
+}
+
+dl > dd > a {
+    font-size: 0.7rem;
+    color: #999;
+}
+
+.social-item {
+    padding: 12px;
+    opacity: 0.6;
+}
+
+.social-item + i {
+    position: relative;
+    font-size: 0.9rem;
+    left: 5px;
+    top: 1px;
+}
+
+.social-link:hover .social-item{
+    background-color: white !important;
+    opacity: 1;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.footer-copy, .footer-info {
+    font-size: 0.7rem;
+}
+
+i {
+    font-style: normal;
+}
+
+.divider::before {
+    content: " | ";
+}
+
+.footer-maxwidth {
+    max-width: 450px;
+}
+
+.txt {
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+}
+
+.modal-lg {
+    max-width: 600px;
+}
+
+.footer-nav, .footer-copy {
+    background-color: black;
+}
+
+.pc-only {
+    display: none;
+}
+
+#ship ~ .mobile-only {
+    display: inline-block;
+}
+
+.footer-nav > .row > div:not(:first-of-type) {
+    display: none;
+}
+
+.mobile-icon {
+    visibility: visible;
+}
+
+.next_pnl {
+    list-style-type: none;
+}
+
+.next_pnl > li {
+    padding: 5px 0px;
+    
+}
+
+.next_pnl a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offcanvas-end {
+    width: 320px;
+}
+
+header.nav-down {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.scrollup {
+    display: none;
+
+}
+
+.scrollup.nav-down {
+    text-align: right;
+    display: block;
+    position: sticky;
+    bottom: 100px;
+    z-index: 100;
+}
+
+.scrollup i {
+    width: 30px;
+}
+
+.scrollup i:hover {
+    background-color: #fa5400 !important;
+    color: white;
+}
+
+#fallback {
+    top: 2px !important;
+    left: -15px !important;
+}
+
+.offcanvas-body ul {
+    list-style-type: none;
+    padding: 20px 0px 0px 0px;
+}
+
+#new_depth1 .offcanvas-body ul li {
+    padding-bottom: 10px;
+}
+
+button:focus, button:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.tooltip-inner{
+    display: inline-block;
+    width: 130px;
+    position: absolute;
+    bottom: -20px;
+    background-color: #444;
+    font-size: 0.7rem;
+}
+
+.tooltip .tooltip-arrow::before {
+   bottom: -3px;
+   left: 3px;
+    border-bottom-color: #444;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.navbar-nav > li::after{
+    margin-left: 5px;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    transform: scaleX(1);
+
+}
+
+.navbar-nav:hover .float-start {
+    display: block;
+}
+
+@media (min-width: 575.98px) {
+    .pc-only  {
+        visibility: visible;
+        display: block;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
+    #ship ~ .mobile-only {
+        display: block;
+    }
+
+    .footer-nav > .row > div:not(:first-of-type) {
+        display: block;
+    }
+}
+
+@media (min-width: 767.98px) {
+    #search {
+        visibility: visible;
+    }
+
+    .mobile-icon {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    #ship ~ .mobile-only {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 1199.98px) {
+    .mySwiper:hover .button-prev, .mySwiper:hover .button-next, .swiper-scrollbar {
+        visibility: visible;
+    }
+    
+    .card-body {
+        font-size: 0.9rem;
+        padding: 0px;
+        font-weight: 600;
+    }
+
+}
+
+.dropdown-menu {
+    z-index: 1000;
+}
+
+.nav-item:hover .megamenu {
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 360px;
+    animation:fadeInDown 0.3s ease-out forwards;
+}
+
+.depth_inner {
+    list-style-type: none;
+    display: inline-block;
+}
+
+@keyframes fadeInDown
+{ 
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 84%;
+    }
+}

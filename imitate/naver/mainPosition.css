@@ -1,0 +1,557 @@
+/* header */
+#header {
+    position: relative;
+}
+
+.special_bg {
+    position: relative;
+    height: 160px;
+}
+
+.group_flex {
+    position: relative;
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.logo_area {
+    position: relative;
+    height: 100%;
+}
+
+.logo_default {
+    position: absolute;
+    top: 30%;
+    color: #19ce60;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+div.service_area {
+    position: absolute;
+    right: 27px;
+    top: 12px;
+    font-size: 0.5rem;
+}
+
+div#search {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    margin-top: -25px;
+}
+
+.green_window {
+    width: 582px;
+    height: 52px;
+    position: relative;
+    border: 2px solid #19ce60;
+
+}
+#query {
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    border: none;
+}
+
+#query:focus {
+    outline: none;
+}
+
+#search_btn {
+    position: absolute;
+    width: 60px;
+    height: 52px;
+    background-color: #19ce60;
+    border: none;
+    right: 0px;
+}
+
+/* nav */
+#gnb {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+    border-top: 1px solid #dae1e6;
+}
+
+#NM_FAVORATE {
+    position: relative;
+    width: 1130px;
+    padding: 0px 30px;
+    margin: 0 auto;
+}
+
+div.group_nav {
+    position: relative;
+    width: 1130px;
+    overflow: hidden;
+
+}
+div.group_nav > .list_nav {
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+    padding: 0px;
+}
+
+li.nav_item {
+    display: inline;
+    margin-left: 12px;
+}
+
+.btn_more {
+    position: relative;
+    left: 10px;
+    font-size: 0.6rem;
+}
+
+#NM_WEATHER {
+    position: absolute;
+    right: 250px;
+    top: 15px;
+
+}
+
+/* container */
+
+#container {
+    width: 1130px;
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+
+
+/* container-left */
+#NM_INT_LEFT{
+    display: inline-block;
+    width: 750px;
+}
+
+.direct_area {
+    position: absolute;
+    right: 16px;
+    bottom: 12px;
+}
+
+#NM_NEWSSTAND_HEADER {
+    position: relative;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    padding: 12px 15px;
+}
+
+#NM_NEWSSTAND_TITLE {
+    position: relative;
+    padding: 22px 0px 16px;
+}
+
+#NM_NEWSSTAND_data_buttons {
+    display: inline-block;
+}
+
+#NM_NEWSSTAND_view_buttons {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.thumb_box {
+    position: relative;
+    border: 1px solid #dae1e6;
+    border-collapse: collapse;
+    display: inline-block;
+    min-width: 16.65%;
+    height: 20px;
+    padding: 22px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: -6px;
+    z-index: -1;
+}
+
+.theme_head {
+    padding: 35px 0px 0px 0px;
+}
+
+.group_title {
+    position: relative;
+}
+.title_area {
+    display: inline-block;
+}
+
+.info_area {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.list_category {
+    padding: 0;
+}
+
+.category_item {
+    display: inline-block;
+    border: 1px solid #dae1e6;
+    border-collapse: collapse;
+    width: 12.4%;
+    padding: 10px 0px;
+    margin-right: -6px;
+    text-align: center;
+
+}
+
+.theme_fix_wrap {
+    position: relative;
+}
+
+.pm_btn_prev {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+}
+
+.pm_btn_next {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+}
+
+.list_theme {
+    list-style-type: none;
+}
+
+.theme_thumb {
+    display: inline-block;
+}
+
+.theme_info {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.group_theme {
+    border-bottom: 1px solid #dae1e6;
+}
+
+.theme_cont {
+    position: relative;
+}
+.btn_more_wrap {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+}
+
+/* container-right */
+
+#NM_INT_RIGHT{
+    display: inline-block;
+    width: 350px;
+    vertical-align: top;
+    position: sticky;
+    top: -250px;
+    font-size: 0.7rem;
+    margin-left: 20px;
+}
+
+#account {
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    padding: 16px 15px 12px 15px;
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.login_msg {
+    margin: 0;
+}
+
+.link_login {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #19ce60;
+}
+
+.ico_naver {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.7rem;
+}
+
+.look_box, .link_join {
+    display: inline-block;
+}
+
+.link_join {
+    position: absolute;
+    right: 10px;
+}
+
+.sub_area {
+    margin-top: 10px;
+    position: relative;
+}
+
+#timesquare {
+    border: 1px solid #dae1e6;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#shop_wrap {
+    padding: 0px;
+    position: relative;
+}
+
+.shop_header {
+    position: relative;
+    margin-top: 10px;
+}
+
+.tab_item, .link_shop, .shop_tab {
+    display: inline-block;
+}
+
+.link_shop {
+    font-size: 0.7rem;
+    margin: 0px;
+}
+
+.shop_tab {
+    position: absolute;
+    right: 0px;
+    margin: 0px;
+}
+
+.group_mall {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #dae1e6;
+    background-color: #f7f9fa;
+    font-size: 0.6rem;
+}
+
+.mall_area {
+    margin-top: 5px;
+}
+
+.num_box, .btn_box {
+    display: inline-block;
+}
+
+.shop_control {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group_goods {
+    border: 1px solid #dae1e6;
+    border-collapse: collapse;
+    margin-top: -1px;
+}
+
+.list_goods {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+}
+
+span.title {
+    display: block;
+}
+
+.goods_item {
+    display: inline-block;
+    width: 32%;
+    margin-top: 10px;
+}
+
+.shop_page {
+    text-align: center;
+}
+
+/* footer */
+
+#footer {
+    background-color: #f7f9fa;
+    border-top: 1px solid #dae1e6;
+    font-size: 0.6rem;
+    color: #777;
+}
+
+.footer_inner {
+    width: 1130px;
+    padding: 0 30px 92px;
+    margin: 0 auto;
+}
+
+.banner_area {
+    padding: 24px 0px;
+}
+
+h3.title {
+    display: inline-block;
+    margin: 0px;
+    width: 87px;
+}
+
+.link_notice {
+    position: absolute;
+    right: 0;
+}
+
+.notice_area {
+    border-top: 1px solid #dae1e6;
+    position: relative;
+    padding: 16px 0px;
+}
+
+.partner_box_wrap {
+    padding: 16px 0px;
+    line-height: 1.2rem;
+    display: inline-block;
+
+}
+
+.link_partner {
+    color: #777;
+}
+
+.link_partner:not(:last-child):after {
+    content: "|";
+    margin: 0px 4px;
+    color: gainsboro;
+}
+
+.service_box_wrap {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    padding: 27px;
+}
+
+.service_logo {
+    width: 48px;
+    height: 48px;
+}
+
+.service_box {
+    display: inline-block;
+    position: relative;
+    margin-left: 130px;
+}
+
+.aside_area {
+    border-top: 1px solid #dae1e6;
+    position: relative;
+}
+
+.service_info > strong {
+    display: block;
+    color: black;
+}
+
+.service_info {
+    position: absolute;
+    top: 0px;
+    left: -80px;
+
+}
+
+.corp_area {
+    border-top: 1px solid #dae1e6;
+}
+
+.list_corp {
+    list-style-type: none;
+    margin: 20px 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.corp_item {
+    display: inline-block;
+}
+
+.corp_item:not(:last-child)::after {
+    content: "|";
+    color: gainsboro;
+    margin: 0px 2px 0px 6px;
+}
+
+.addr {
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.group_event {
+    border: 1px solid #dae1e6;
+    margin-top: -1px;
+    padding: 10px;
+    position: relative;
+}
+
+.shop_control {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.shop_title > strong {
+    display: inline-block;
+}
+
+.list_event {
+    padding: 0px 20px;
+}
+
+/* fix */
+#NM_darkmode_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    z-index: 10;
+}
+
+
+
+/* all */
+
+body {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    margin: 0px;
+}
+
+#wrap {
+    min-width: 1190px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;   
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100px;
+}
+
+h3 {
+    font-size: 0.6rem;
+    color: black;
+}

@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테슷흐</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="custom.css">
+
+    
+</head>
+
+<style>
+:root {
+  --custom-color: gray;
+}
+
+p {
+  color: var(--bs-cyan);
+  font-family: var(--bs-font-monospace);
+  background: var(--bs-gradient);
+  
+}
+.one {
+  color: white;
+  background-color: var(--custom-color);
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.two {
+  color: white;
+  background-color: black;
+  margin: 10px;
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+}
+.three {
+  color: white;
+  background-color: var(--custom-color);
+  margin: 10px;
+  width: 75px;
+}
+.four {
+  color: white;
+  background-color: var(--custom-color);
+  margin: 10px;
+  width: 100px;
+}
+
+.five {
+  background-color: var(--custom-color);
+}
+
+.col, .col-sm-4 {
+    border: 1px solid black;
+}
+
+.repeat-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+
+  gap: 10px;
+}
+
+
+</style>
+<br>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+
+<button class="btn btn-primary position-relative ">
+        메일 <span class="position-absolute badge bg-danger  start-100 translate-middle ">99+</span>
+</button>
+
+
+
+<button type="button" class="btn btn-primary">Notifications
+  <span class="badge bg-secondary">4</span>
+</button>
+<h3>2021/10/26 <span class="badge bg-secondary">New</span></h3>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+
+  <span style="position: absolute; right: 2.5%;">오늘 하루 열지 않음</span>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+  </button>
+</div>
+
+
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </svg>
+  <div>
+    An example alert with an icon
+  </div>
+</div>
+
+<i class="bi-alarm"> 오오오오 알람</i>
+<i class="bi bi-volume-down-fill"></i>
+<i class="bi bi-volume-mute"></i>
+<div class="alert alert-danger" role="alert">
+  <h4 class="">Well done!</h4>
+<hr>
+
+  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
+
+
+<div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+  A simple secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+  A simple success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+  A simple danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+  A simple warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+  A simple info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+  A simple light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+  A simple dark alert—check it out!
+</div>
+
+<div style="width: 50%; margin: auto">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div style="width: 50%; margin: auto;">
+  <div class="accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      </div>
+    </div>
+    <div class="accordion-item accordion-collapse">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+  </div>
+    
+</div>
+<br><br><br><br><br><br>
+<div style="width: 50%; margin: auto;">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4 position-relative">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control was-validated" id="validationCustom01" value="Mark" required>
+    <div class="valid-feedback was-validated">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-tooltip">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 position-relative">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-tooltip">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-tooltip">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3 position-relative">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-tooltip">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+
+
+<div style="width: 50%; margin: auto;">
+  <form class="row row-cols-lg-auto g-3 align-items-center">
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-text">@</div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-12">
+      <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+      <select class="form-select" id="inlineFormSelectPref">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+        <label class="form-check-label" for="inlineFormCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+  
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+<div style="width: 50%; margin: auto;">
+  <form class="row g-3 p-3 border">
+    <label for="formGroupExampleInput" class="form-label col-3 col-lg-2 py-2">Email</label>
+    <div class="col-auto">
+      <input type="text" class="form-control" placeholder="" aria-label="Email">
+    </div>
+
+    <div class="w-100"></div>
+
+    <label for="formGroupExampleInput" class="form-label col-3 col-lg-2 py-2">Password</label>
+    <div class="col-auto">
+      <input type="text" class="form-control" placeholder="" aria-label="Password">
+    </div>
+
+    <div class="w-100"></div>
+
+    <div class="col-auto">
+      <label for="formGroupExampleInput" class="form-label">Address</label>
+      <input type="text" class="form-control" placeholder="12345 Main St" aria-label="Address">
+
+    </div>
+
+    <div class="col-auto">
+      <label for="formGroupExampleInput" class="form-label">Address 2</label>
+      <input type="text" class="form-control" placeholder="Apartment, studio, of floor" aria-label="Address2">
+
+    </div>
+
+
+    <div class="col-6">
+      <label for="formGroupExampleInput" class="form-label">City</label>
+      <input type="text" class="form-control" placeholder="City" aria-label="City">
+    </div>
+
+    <div class="col-4">
+      <label for="formGroupExampleInput" class="form-label">State</label>
+      <select class="form-select" aria-label="state">
+        <option selected>Choose...</option>
+        <option value="1">서울</option>
+        <option value="2">경기도</option>
+        <option value="3">광주</option>
+      </select>
+    </div>
+
+    <div class="col-2">
+      <label for="formGroupExampleInput" class="form-label">Zip</label>
+      <input type="text" class="form-control" placeholder="" aria-label="zip">
+    </div>
+
+
+    <div class="col-12">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+        <label class="form-check-label" for="">
+          Check me out
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-success">가입</button>
+    </div>
+  </form>
+</div>
+
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Example label</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Another label</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+</div>
+
+
+<div class="row g-5">
+  <div class="col-md">
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+      <label for="floatingInputGrid">Email address</label>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="form-floating">
+      <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <label for="floatingSelectGrid">Works with selects</label>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+  <label for="floatingTextarea">Comments</label>
+</div>
+
+
+<form class="form-floating">
+  <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+  <label for="floatingInputInvalid">Invalid input</label>
+</form>
+
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput" class="text-primary">Email address</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+
+
+
+<div class="input-group mb-3">
+  <input type="file" class="form-control" id="inputGroupFile02">
+  <label class="input-group-text" for="inputGroupFile02">Upload</label>
+</div>
+
+
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+
+
+<div class="input-group input-group-sm mt-3 mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+
+
+
+<label for="customRange3" class="form-label">range 예제 단계별 range</label>
+<input type="range" class="form-range" min="0" max="3" step="0.3">
+
+<label for="customRange2" class="form-label">Example range</label>
+<input type="range" class="form-range" min="0" max="20" id="customRange2">
+
+
+<label for="customRange1" class="form-label">Example range</label>
+<input type="range" class="form-range" id="customRange1">
+
+
+<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+<label class="btn btn-danger" for="option1">Checked</label>
+
+<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+<label class="btn btn-outline-success" for="option2">Radio</label>
+
+<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+<label class="btn btn-secondary" for="option3">Disabled</label>
+
+<input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+<label class="btn btn-secondary" for="option4">Radio</label>
+
+
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+</div>
+
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+  <label class="form-check-label" for="defaultCheck1">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked disabled>
+  <label class="form-check-label" for="defaultCheck2">
+    Disabled checkbox
+  </label>
+</div>
+
+
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+  <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+  <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+</div>
+
+<div class="form-check">
+  <input class="" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Checked checkbox
+  </label>
+</div>
+
+<select class="form-select" aria-label="Disabled select example" disabled>
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<select class="form-select" size="10" aria-label="size 3 select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<select class="form-select form-select-md" aria-label=".form-select-sm example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<br>
+<select class="form-select form-select-sm" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<br>
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+<br>
+<label for="inputPassword5" class="form-label">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</div>
+
+<div class="repeat-container">
+  <div class="border B">A</div>
+  <div class="border">B</div>
+  <div class="border">C : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias mollitia nemo asperiores quis ut, aliquid totam obcaecati.</div>
+  <div class="border">D</div>
+  <div class="border">E</div>
+  <div class="border">F</div>
+  <div class="border">G</div>
+</div>
+
+<div class="min-vw-100 bg-primary">Min-width 100vw</div>
+<div class="min-vh-100 bg-warning">Min-height 100vh</div>
+<div class="vw-100 bg-danger">Width 100vw</div>
+<div class="vh-100 bg-dark text-white">Height 100vh</div>
+
+<br>
+<div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+<div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+<div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+
+<div class="bg-light">
+  <form class="mb-4 w-50 mx-auto">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+<img  width="400px" class="img-thumbnail float-start rounded-3" src="https://post-phinf.pstatic.net/MjAyMTA0MTJfMTIy/MDAxNjE4MjMwNjQwODgz.LD2NhHRciRkR_FfkvJIHhi2RofhmzWIWpdSfnLqdXe0g.mMy67K1HcGiu45_r1gMSWC8QcqKqgsARo-96mrGSWEMg.JPEG/se3_image_4126941950.jpg?type=w1200">
+<img  width="400px" class="img-thumbnail float-end rounded-2" src="https://post-phinf.pstatic.net/MjAyMTA0MTJfMTIy/MDAxNjE4MjMwNjQwODgz.LD2NhHRciRkR_FfkvJIHhi2RofhmzWIWpdSfnLqdXe0g.mMy67K1HcGiu45_r1gMSWC8QcqKqgsARo-96mrGSWEMg.JPEG/se3_image_4126941950.jpg?type=w1200">
+
+<img  width="400px" class="rounded mx-auto d-block" src="https://post-phinf.pstatic.net/MjAyMTA0MTJfMTIy/MDAxNjE4MjMwNjQwODgz.LD2NhHRciRkR_FfkvJIHhi2RofhmzWIWpdSfnLqdXe0g.mMy67K1HcGiu45_r1gMSWC8QcqKqgsARo-96mrGSWEMg.JPEG/se3_image_4126941950.jpg?type=w1200">
+
+
+<div class="text-center">
+  <img class="img-fluid img-thumbnail rounded-3" src="https://post-phinf.pstatic.net/MjAyMTA0MTJfMTIy/MDAxNjE4MjMwNjQwODgz.LD2NhHRciRkR_FfkvJIHhi2RofhmzWIWpdSfnLqdXe0g.mMy67K1HcGiu45_r1gMSWC8QcqKqgsARo-96mrGSWEMg.JPEG/se3_image_4126941950.jpg?type=w1200">
+
+</div>
+
+
+<dl class="row">
+  <dt class="col-sm-3">Description lists</dt>
+  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="col-sm-3">Term</dt>
+  <dd class="col-sm-9">
+    <p>Definition for the term.</p>
+    <p>And some more placeholder definition text.</p>
+  </dd>
+
+  <dt class="col-sm-3">Another term</dt>
+  <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+  <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+  <dt class="col-sm-3">Nesting</dt>
+  <dd class="col-sm-9">
+    <dl class="row">
+      <dt class="col-sm-4">Nested definition list</dt>
+      <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+    </dl>
+  </dd>
+</dl>
+
+
+<ul class="list-inline">
+  <li class="list-inlne-item">This is a list item.</li>
+  <li class="list-inline-item">And another one.</li>
+  <li class="list-inline-item">But they're displayed inline.</li>
+</ul>
+
+
+<p><abbr title="여기다가 쓰는건가">attr</abbr></p>
+<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+
+<p class="lead">
+  This is a lead paragraph. <mark>stands out </mark> from regular paragraphs.
+</p>
+
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1>
+<h1>기본 h1</h1>  
+
+<h3>
+  Fancy display heading
+  <small class="text-muted">With faded secondary text</small>
+</h3>
+
+<br>
+
+<div class="mb-3">
+  <label for="" class="form-label"></label>
+  <select class="form-control" name="" id="">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+</div>
+<button type="reset" class="btn btn-primary">Reset</button>
+
+<div class="form-check form-check-inline">
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> Display value
+  </label>
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> Display value
+  </label>
+  <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> Display value
+  </label>
+
+</div>
+<label class="custom-control custom-radio">
+  <input type="radio" name="" id="" value="checkedValue" class="custom-control-input">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description"></span>
+</label>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="" id="" value="checkedValue">
+    Display value
+  </label>
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="" id="" value="checkedValue">
+    Display value
+  </label>
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="" id="" value="checkedValue">
+    Display value
+  </label>
+  
+</div>
+  <button type="submit" class="btn btn-warning">Submit</button>
+  <button type="submit" class="btn btn-outline-warning">Submit</button>
+
+  <div class="mb-3">
+    <label for="" class="form-label"></label>
+    <input type="password" class="form-control" name="" id="" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label"></label>
+    <select multiple class="form-select" name="" id="">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div style="width: 300px; height: 100px; display: inline-block;">
+  <form class="d-flex">
+    <div class="col">
+      <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input type="range" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+        <small id="helpId" class="text-muted">Help text</small>
+      </div>
+    </div>
+  </form>
+</div>
+
+  <div class="mb-3">
+    <label for="" class="form-label"></label>
+    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+    <small id="emailHelpId" class="form-text text-muted">Help text</small>
+  </div>
+  <div class="form-check">
+      <input class="form-check-input" name="" id="" type="checkbox" value="checkedValue" aria-label="Text for screen reader">
+      <label class="form-check-label" for="">
+     Display value
+   </label>
+  </div>
+
+ <div class="form-check">
+   <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+   <label class="form-check-label" for="">
+     Display value
+   </label>
+ </div>
+
+ <label class="custom-control custom-checkbox">
+   <input type="checkbox" name="" id="" value="checkedValue" class="custom-control-input">
+   <span class="custom-control-indicator">지시자</span>
+   <span class="custom-control-description">서렴ㅇ</span>
+ </label>
+
+  <div class="mb-3">
+    <label for="" class="form-label"></label>
+    <input type="file" class="form-control" name="" id="" aria-describedby="fileHelpId">
+    <small id="fileHelpId" class="form-text text-muted">Help text</small>
+  </div>
+
+    
+
+  </fieldset>
+  <samp>This text is meant to be treated as sample output from a computer program.
+    what means sample output.
+    I don't understanding.
+  </samp>
+  <br>
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+  <br>
+  
+
+  <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+    &lt;p&gt;And another line of sample text here...&lt;/p&gt;
+    </code></pre>
+    
+  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+  <br>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>청자다방</th>
+        <th>이디야</th>
+        <th>스타벅스</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">바닐라라떼</td>
+        <td>토피넛라떼</td>
+        <td>바크콜</td>
+      </tr>
+      <tr>
+        <td scope="row">더치</td>
+        <td>플랫치노</td>
+        <td>프라푸치노</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <br>
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-1">
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row column</div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="container">
+    <div class="row gx-5 gy-5">
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <div class="row gx-5 gy-5">
+      <div class="col-6 border">
+        <div class="border">1 of 3</div>
+        
+      </div>
+      <div class="col col-6">
+        <div>2 of 3 (wider)</div>
+        
+      </div>
+      <div class="col">
+        <div></div>
+        3 of 3
+      </div>
+
+      <div class="col col-xxl-6">
+        1 of 3
+      </div>
+      <div class="col col-5">
+        2 of 3 (wider)
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+
+    </div>
+
+  </div>
+
+  <br>
+  <div class="border container-sm">100% wide until small breakpoint</div>
+<div class="border container-md">100% wide until medium breakpoint</div>
+<div class="border container-lg">100% wide until large breakpoint</div>
+<div class="border container-xl">100% wide until extra large breakpoint</div>
+<div class="border container-xxl">100% wide until extra extra large breakpoint</div>
+<br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">테</div>
+      <div class="col">이</div>
+      <div class="col">블</div>
+    </div>
+  </div>
+  <br>
+  <div class="d-grid gap-5">
+    <div class="p-3 bg-light border">Grid item 1</div>
+    <div class="p-2 bg-light border">Grid item 2</div>
+    <div class="p-2 bg-light border">Grid item 3</div>
+  </div>
+  <br>
+
+  <div class="mx-auto bg-secondary text-warning" style="width: 200px;">
+    Centered element
+  </div>
+
+  <br>
+  <div class="container mt-n4">
+    <div class="row row-cols-auto">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+      <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+  
+      <!-- Force next columns to break to new line -->
+      <div class="w-100"></div>
+  
+      <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+      <div class="col col-6 col-sm-3">.col-6 .col-sm-3</div>
+    </div>
+  </div>
+<br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-9">.col-9</div>
+      <div class="col col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+      <div class="col col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col col-sm-3 bg-light">
+        Level 1: .col-sm-3
+      </div>
+      <div class="col col-sm-9 bg-success">
+        <div class="row align-items-center">
+          <div class="col col-8 col-sm-6 bg-dark text-white-50">
+            Level 2: .col-8 .col-sm-6
+          </div>
+          <div class="col col-4 col-sm-6 bg-secondary">
+            Level 2: .col-4 .col-sm-6
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row bg-info">
+      <div class="col col-xs-3">.col-xs-3</div>
+      <div class="col col-xs-3">.col-xs-3</div>
+      <div class="col col-xs-3">.col-xs-3</div>
+      <div class="col col-xs-3">.col-xs-3ddddddddddddddddddddddddd</div>
+    </div>
+
+    <div class="row bg-warning">
+      <div class="col col-sm-3">.col-sm-3</div>
+      <div class="col col-sm-3">.col-sm-3</div>
+      <div class="col col-sm-3">.col-sm-3</div>
+      <div class="col col-sm-3">.col-sm-3ddddddddddddddddddddddddd</div>
+    </div>
+
+    <div class="row bg-primary">
+      <div class="col col-md-3">.col-md-3</div>
+      <div class="col col-md-3">.col-md-3</div>
+      <div class="col col-md-3">.col-md-3</div>
+      <div class="col col-md-3">.col-md-3ddddddddddddddddddddddddd</div>
+    </div>
+
+    <div class="row bg-success">
+      <div class="col col-lg-3">.col-lg-3</div>
+      <div class="col col-lg-3">.col-lg-3</div>
+      <div class="col col-lg-3">.col-lg-3</div>
+      <div class="col col-lg-3">.col-lg-3ddddddddddddddddddddddddd</div>
+    </div>
+  </div>
+
+
+  <br>
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-3">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col col-4 col-lg-2">Column</div>
+      <div class="col col-4 col-lg-2">Column</div>
+      <div class="col col-4 col-lg-2">Column</div>
+      <div class="col col-4 col-lg-2">Column</div>
+      <div class="col col-4 col-lg-2">Column</div>
+      <div class="col col-4 col-lg-2">Column</div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="row row-cols-4">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+
+<br>
+  <div class="container">
+    <div class="row row-cols-2">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col col-6">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+
+
+  <div class="container border">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row my-2">
+      <div class="col-md-8 bg-light border">.col-md-8</div>
+      <div class="col-6 col-md-4 bg-light border">.col-6 .col-md-4</div>
+    </div>
+  
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+      <div class="col-4 col-md-4 bg-light border">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4 bg-light border">.col-6 .col-md-4</div>
+      <div class="col-6 col-md-4 bg-light border">.col-6 .col-md-4</div>
+    </div>
+  
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row my-3">
+      <div class="col-6 bg-light border">.col-6</div>
+      <div class="col-6 bg-light border">.col-6</div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-8">col-sm-8</div>
+      <div class="col col-sm-4">col-sm-4</div>
+    </div>
+    <div class="row">
+      <div class="col col-sm">col-sm</div>
+      <div class="col col-sm">col-sm</div>
+      <div class="col col-sm">col-sm</div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+    <div class="row">
+      <div class="col col-8">col-8</div>
+      <div class="col col-4">col-4</div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        1 of 3
+      </div>
+      <div class="col col-md-auto">
+        Variable <br>width <br>content
+      </div>
+      <div class="col col-lg-2">
+        3 of 3
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col col-md-auto">
+        Variable <br>width <br>content
+      </div>
+      <div class="col col-lg-2">
+        3 of 3
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        1 of 2
+      </div>
+      <div class="col col-2">
+        2 of 2
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-6">
+        1 of 3
+      </div>
+      <div class="col col-4">
+        2 of 3
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container px-4 my-5">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container-sm border text-info">100% wide until small breakpoint</div>
+  <div class="container-md border bg-warning">100% wide until medium breakpoint</div>
+  <div class="container-lg border">100% wide until large breakpoint</div>
+  <div class="container-xl border">100% wide until extra large breakpoint</div>
+  <div class="container-xxl border">100% wide until extra extra large breakpoint</div>
+
+  <table class="table caption-top">
+    <caption>List of users</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+      <td>table footer table footer table footer table footer</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <br>
+
+  <button type="button" class="btn btn-outline-warning">버튼</button>
+  <!-- striped|sm|bordered|hover|inverse table-inverse table-responsive -->
+
+  <table class="table">
+    <thead>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Otto</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Thornton</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2"> 테이블 풋</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table class="table table-striped table-light table-hover">
+    <thead>
+      <tr class="table-primary">
+        <th scope="col" class="table-danger">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2" class="text-info">Larry the Bird</td>
+        <td class="text-info">@twitter</td>
+      </tr>
+      <tr class="table-warning">
+        <th scope="row">4</th>
+        <td>Hungry</td>
+        <td>Kim</td>
+        <td>@bab</td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          
+          <table class="table mb-0">
+            <thead class="">
+              <tr>
+                <th class="">뭐</th>
+                <th>가</th>
+                <th>스페셜</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr class="align-bottom">
+                  <td scope="row">1</td>
+                  <td class="table-active">인지 잘 </td>
+                  <td>모르겠</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>이것은 이전 셀에서 수직 정렬이 어떻게 작동하는지 보여주기 위해 꽤 많은 수직 공간을 차지하기 위한 일부 자리 표시자 텍스트입니다.
+                    한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한
+                    글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한
+                    한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글한글</td>
+                  <td class="align-">This cell is aligned to the top.</td>
+                </tr>
+              </tbody>
+          </table>
+          
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Cup</td>
+        <td>Lamen</td>
+        <td>@lunch</td>
+      </tr>
+      <tr>
+        <th scope="row" class="table-dark">6</th>
+        <td>Goto</td>
+        <td>Coffee</td>
+        <td>@shop</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Move</td>
+        <td>Out</td>
+        <td>@office</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+
+  <p>This paragraph is initial black.</p>
+  <div>
+    <div class="one">1:</div>
+    <div class="two">2: Text <span class="five">5 - more text</span></div>
+    <input class="three">
+    <textarea class="four">4: Lorem Ipsum</textarea>
+  </div>
+
+
+
+  <h1 class="p-3" style="">Hello World</h1>
+  <p class="text-danger">   <span class="visually-hidden">Danger: This action is not reversible</span>    </p> 
+
+  <h2 class="visually-hidden">Title for screen readers</h2>
+  <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+  <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>
+
+  
+  <div class="container-md">
+      <div class="row">
+        <div class="col-sm-4 bg-primary">
+          Column
+        </div>
+        <div class="col bg-secondary">
+          Column
+        </div>
+        <div class="col bg-danger">
+          Column
+        </div>
+      </div>
+  </div>
+
+
+  <div class="mx-5 px-2" style="width: 200px; display:inline-block;">
+    Centered element
+  </div>
+  <div class="mx-1" style="width: 200px; display:inline-block;">
+    Centered element
+  </div>
+
+  <div class="d-grid gap-3">
+    <div class="p-2 bg-blue border">Grid item 1</div>
+    <div class="p-2 bg-warning border">Grid item 2</div>
+    <div class="p-2 bg-success border">Grid item 3</div>
+  </div>
+  
+  <p class="text-purple bg-info">텍스트 컬러</p>
+  <p class="text-primary">.text-primary</p>
+  <p class="text-secondary">.text-secondary</p>
+  <p class="text-success">.text-success</p>
+  <p class="text-danger">.text-danger</p>
+  <p class="text-warning bg-dark">.text-warning</p>
+  <p class="text-info bg-dark">.text-info</p>
+  <p class="text-light bg-dark">.text-light</p>
+  <p class="text-dark">.text-dark</p>
+  <p class="text-body">.text-body</p>
+  <p class="text-muted">.text-muted</p>
+  <p class="text-white bg-dark">.text-white</p>
+  <p class="text-black-50">.text-black-50</p>
+  <p class="text-white-50 bg-dark">.text-white-50</p>
+
+      
+  <script src="example.js"></script>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+</body>
+</html>
