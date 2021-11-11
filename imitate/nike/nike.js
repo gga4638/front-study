@@ -16,9 +16,11 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 // })
 
 
+// swiper-slide
 var swiper = new Swiper(".mySwiper", {
   watchSlidesProgress: true,
-  slidesPerView: 1,
+  slidesPerView: 1.5,
+  freeMode: true,
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: "true",
@@ -82,3 +84,13 @@ function hasScrolled() {
 $('.dropdown').hover(function(){ 
   $('.btn', this).trigger('click'); 
 });
+
+$('.nav-item').on({
+  'mouseenter': function () { //들어왔을때
+      $('.dropdown-menu').stop().slideDown(300);
+  },
+  'mouseleave': function () { //나갔을때
+      $('.dropdown-menu').stop().slideUp(300);
+  }
+});
+
