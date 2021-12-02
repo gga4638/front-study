@@ -39,58 +39,35 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-// Hide Header on on scroll down
-var didScroll; 
-var lastScrollTop = 0; 
-var delta = 5; 
-var navbarHeight = $('header').outerHeight();
-var scrollupHeight = $('.scrollup').outerHeight(); 
+// scroll 위로 올릴 때만 navbar, content-top 보이기
+var scrollPosition = 0;
+$(window).scroll(function() {
+  console.log($('#header').height());
+  if(scrollPosition - $(window).scrollTop() > 0 && $(window).scrollTop() >= 60) {
+    $('.scrollup').addClass('content-top');
+    $('.navbar').addClass('fixed');
 
+  } else {
+    $('.scrollup').removeClass('content-top');
+    $('.navbar').removeClass('fixed');
 
-$(window).scroll(function(event){ 
-  didScroll = true; 
-}); 
-
-setInterval(function() { 
-   if (didScroll) { 
-     hasScrolled(); 
-     didScroll = false; 
-  } 
-}, 250); 
-
-function hasScrolled() { 
-  var st = $(this).scrollTop(); 
-
-  // If they scrolled down and are past the navbar, add class .nav-up. 
-  // This is necessary so you never see what is "behind" the navbar. 
-  if (st > lastScrollTop && st > navbarHeight){ 
-    // Scroll Down 
-    $('header').removeClass('nav-down').addClass('nav-up'); 
-    $('.scrollup').removeClass('nav-down').addClass('nav-up'); 
-  } else { 
-    // Scroll Up 
-      if($(window).height() <= $(document).height()) { 
-        $('header').removeClass('nav-up').addClass('nav-down'); 
-        $('.scrollup').removeClass('nav-up').addClass('nav-down'); 
-      } 
-    } 
-  lastScrollTop = st; 
-
-  if($(window).scrollTop() <= 300) {
-    $('.scrollup').removeClass('nav-down').addClass('nav-up'); 
   }
-}
 
-$('.dropdown').hover(function(){ 
-  $('.btn', this).trigger('click'); 
+  scrollPosition = $(window).scrollTop();
 });
 
-$('.nav-item').on({
-  'mouseenter': function () { //들어왔을때
-      $('.dropdown-menu').stop().slideDown(300);
-  },
-  'mouseleave': function () { //나갔을때
-      $('.dropdown-menu').stop().slideUp(300);
-  }
+$(function() {
+  $(".inner_item").on({
+    mouseenter: function() {
+      $(this).find(".depth_wrap").slideDown("fast");
+    },
+    mouseleave: function() {
+      $(this).find(".depth_wrap").slideUp("fast");
+    }
+  });
 });
 
+// nk_gnb 검색 버튼 이벤트
+$('#search').click(function() {
+
+});
