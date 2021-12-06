@@ -62,7 +62,7 @@ $(function() {
       $(this).find(".depth_wrap").slideDown("fast");
     },
     mouseleave: function() {
-      $(this).find(".depth_wrap").slideUp("fast");
+      $(this).find(".depth_wrap").slideUp(0);
     }
   });
 });
