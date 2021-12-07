@@ -20,19 +20,50 @@
     width: 60px;
 }
 
+.navbar-brand {
+    margin-left: 24px;
+}
+
+@media (min-width: 767.98px) {
+    .navbar-brand {
+        margin-left: 32px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .navbar-brand {
+        margin-left: 38px;
+    }
+}
+
 #search > i {
     right: 15px;
     top: -16px;
 }
 
 #search {
-    width: 180px;
-    right: 100px;
-    /* visibility: hidden; */
+    right: 104px;
+}
+
+@media (min-width: 767.98px) {
+    #search {
+        width: 180px;
+        right: 120px;
+    }
 }
 
 #search input {
     display: none;
+}
+
+#search.stretch {
+    text-align: start;
+    width: 50%;
+}
+
+.bg-circle:hover {
+    border-radius: 50%;   
+    background-color: lightgray;
 }
 
 .bi-heart {
@@ -213,6 +244,7 @@ a:hover > img {
 
 footer {
     font-size: 0.8rem;
+    transition: 0.5s;
 }
 
 footer a, footer a:hover{
@@ -307,10 +339,6 @@ i {
     width: 320px;
 }
 
-.nk_gnb {
-    height: 60px;
-}
-
 .nk_gnb .navbar.fixed {
     position: fixed;
     top: 0;
@@ -389,11 +417,24 @@ button:focus, button:active {
     visibility: hidden;
     position: relative;
     top: 2px;
-    z-index: 10;
+    z-index: 150;
+}
+
+.depth_wrap {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 48px;
+    z-index: 100;
 }
 
 .inner_item:hover .menu-bar{
     visibility: visible;
+}
+
+.footer-nav {
+    text-align: center;
 }
 
 @media (min-width: 575.98px) {
@@ -412,6 +453,10 @@ button:focus, button:active {
 
     .footer-nav > .row > div:not(:first-of-type) {
         display: block;
+    }
+
+    .footer-nav {
+        text-align: left;
     }
 }
 
@@ -434,8 +479,6 @@ button:focus, button:active {
     #ship ~ .mobile-only {
         display: none;
     }
-
-
 }
 
 .inner_content {
@@ -443,13 +486,7 @@ button:focus, button:active {
     display: inline-block;
 }
 
-.depth_wrap {
-    display: none;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 52px;
-}
+
 
 .inner_content > li:not(:first-child) > a {
     color: #757575;
@@ -472,7 +509,6 @@ button:focus, button:active {
 
 #search-offcanvasTop {
     height: 100%;
-
 }
 
 @media (min-width: 991.98px) {

@@ -46,28 +46,58 @@ $(window).scroll(function() {
   if(scrollPosition - $(window).scrollTop() > 0 && $(window).scrollTop() >= 60) {
     $('.scrollup').addClass('content-top');
     $('.navbar').addClass('fixed');
-
   } else {
     $('.scrollup').removeClass('content-top');
     $('.navbar').removeClass('fixed');
-
   }
 
   scrollPosition = $(window).scrollTop();
 });
 
+
 $(function() {
   $(".inner_item").on({
     mouseenter: function() {
       $(this).find(".depth_wrap").slideDown("fast");
+      $('.wrapper').css('filter', 'blur(3px)');
+      $('footer').css('filter', 'blur(3px)');
+
     },
     mouseleave: function() {
       $(this).find(".depth_wrap").slideUp(0);
+      $('.wrapper').css('filter', '');
+      $('footer').css('filter', '');
     }
   });
 });
 
 // nk_gnb 검색 버튼 이벤트
 $('#search').click(function() {
+  $(this).css('transition', '1s')
+  $(this).css('z-index', '1600');
 
+  var target = $(".offcanvas");
+
+  if(target.hasClass('show')) {
+    $('#search').addClass('stretch');
+    $('#search .bi-search').css('width', '30px');
+  } else {
+    
+  }
+
+  // 사이드바 외부를 클릭하면 사이드바 닫힘
+  $(document).mouseup(function (e){
+      if(target.has(e.target).length == 0) {
+        $('#search').removeClass('stretch');
+        $('#search').css('transition', '');
+        $('#search .bi-search').css('width', '');
+
+      } 
+  });
+});
+
+$('.offcanvas .btn-close').click(function() {
+  $('#search').removeClass('stretch');
+  $('#search').css('transition', '');
+  $('#search .bi-search').css('width', '');
 });

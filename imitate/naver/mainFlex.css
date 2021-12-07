@@ -39,17 +39,25 @@ h1.logo_default{
 #NM_set_home_btn {
     color: #404040;
     display: flex;
+    width: 137px;
+    padding-top: 2px;
 }
 
 #NM_set_home_btn::after {
     content: "";
     width: 26px;
     height: 26px;
-    background-position: -373px -352px;
+    background-position: -373px -358px;
 }
 
 a.link_happybin, a.link_jrnaver {
     display: flex;
+}
+
+.link_jrnaver::before {
+    content: " |";
+    margin-right: 2px;
+    color: lightgray;
 }
 
 .ico_jrnaver {
@@ -87,7 +95,7 @@ div.service_area {
     display: flex;
     order: 2;
     font-size: 0.5rem;
-    padding: 10px 0px 0px 0px;
+    padding: 12px 0px 0px 0px;
     align-items: flex-start;
 }
 
