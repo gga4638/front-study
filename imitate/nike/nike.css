@@ -128,7 +128,6 @@
     opacity: 0.8;
 }
 
-
 .card-overlay-content {
     word-spacing: -2.8px;
 }
@@ -378,6 +377,10 @@ i {
     padding-bottom: 10px;
 }
 
+#mobile_menu, #new_depth1 {
+    z-index: 1700;
+}
+
 button:focus, button:active {
     border: none !important;
     outline: none !important;
@@ -486,8 +489,6 @@ button:focus, button:active {
     display: inline-block;
 }
 
-
-
 .inner_content > li:not(:first-child) > a {
     color: #757575;
     font-size: 0.8rem;
@@ -505,16 +506,4 @@ button:focus, button:active {
     list-style: none;
     padding: 0px;
     line-height: 2.5rem;
-}
-
-#search-offcanvasTop {
-    height: 100%;
-}
-
-@media (min-width: 991.98px) {
-    #search-offcanvasTop {
-        height: 40%;
-
-    }
-
 }
